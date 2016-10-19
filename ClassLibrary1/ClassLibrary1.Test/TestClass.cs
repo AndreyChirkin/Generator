@@ -309,7 +309,7 @@ namespace ClassLibrary1.Test
             {
                 test.RenderEnd();
             }
-            File.WriteAllText("C:\\Users\\user\\Desktop\\NewFile.html", test.Result);
+            File.WriteAllText("D:\\Users\\chirkin_a\\Desktop\\NewFile.html", test.Result);
             Assert.AreEqual(test.state, HtmlGenerator.State.begin);
         }
     }

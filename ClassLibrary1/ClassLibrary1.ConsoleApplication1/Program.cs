@@ -170,7 +170,7 @@ namespace ClassLibrary1.ConsoleApplication1
             {
                 test.RenderEnd();
             }
-            File.WriteAllText("C:\\Users\\user\\Desktop\\RESULT.html", test.Result);
+            File.WriteAllText("D:\\Users\\chirkin_a\\Desktop\\RESULT.html", test.Result);
 
         }
     }

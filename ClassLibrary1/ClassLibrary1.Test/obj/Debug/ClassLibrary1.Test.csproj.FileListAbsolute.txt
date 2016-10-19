@@ -7,3 +7,12 @@ c:\Users\user\Documents\Visual Studio 2013\Projects\ClassLibrary1\ClassLibrary1.
 c:\Users\user\Documents\Visual Studio 2013\Projects\ClassLibrary1\ClassLibrary1.Test\bin\Debug\nunit.framework.xml
 c:\Users\user\Documents\Visual Studio 2013\Projects\ClassLibrary1\ClassLibrary1.Test\obj\Debug\ClassLibrary1.Test.dll
 c:\Users\user\Documents\Visual Studio 2013\Projects\ClassLibrary1\ClassLibrary1.Test\obj\Debug\ClassLibrary1.Test.pdb
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.Test\bin\Debug\ClassLibrary1.Test.dll
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.Test\bin\Debug\ClassLibrary1.Test.pdb
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.Test\bin\Debug\ClassLibrary1.dll
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.Test\bin\Debug\nunit.framework.dll
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.Test\bin\Debug\ClassLibrary1.pdb
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.Test\bin\Debug\nunit.framework.xml
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.Test\obj\Debug\ClassLibrary1.Test.csprojResolveAssemblyReference.cache
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.Test\obj\Debug\ClassLibrary1.Test.dll
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.Test\obj\Debug\ClassLibrary1.Test.pdb

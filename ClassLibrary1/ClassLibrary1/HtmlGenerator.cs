@@ -70,7 +70,7 @@ namespace ClassLibrary1
             switch (c_style.backgroundType)
             {
                 case CellStyle.BackgroundType.Solid:
-                    Result += String.Format("<td style='background-color: {0}; border: {1}px {2} {3}' align='{4}' colspan='{5}'>\n", backgroundColor, c_style.BorderDepth, borderType, borderColor, c_style.align, c_style.Colspan);
+                    Result += $"<td style='background-color: {backgroundColor}; border: {c_style.BorderDepth}px {borderType} {borderColor}' align='{c_style.align}' colspan='{c_style.Colspan}'>\n";
                     break;
                 case CellStyle.BackgroundType.Gradient:
                     Result += String.Format("<td style='background: linear-gradient(to top, {0} 0%,{1} 50%,{1} 50%,{0} 100%); border:{2}px {3} {4}' align='{5}' colspan='{6}'>\n", sideGradintColor, backgroundColor, c_style.BorderDepth, borderType, borderColor, c_style.align, c_style.Colspan);
