@@ -1,0 +1,8 @@
+C:\Users\user\documents\visual studio 2013\Projects\ClassLibrary1\ClassLibrary1.ConsoleApplication1\bin\Debug\ClassLibrary1.ConsoleApplication1.exe.config
+C:\Users\user\documents\visual studio 2013\Projects\ClassLibrary1\ClassLibrary1.ConsoleApplication1\bin\Debug\ClassLibrary1.ConsoleApplication1.exe
+C:\Users\user\documents\visual studio 2013\Projects\ClassLibrary1\ClassLibrary1.ConsoleApplication1\bin\Debug\ClassLibrary1.ConsoleApplication1.pdb
+C:\Users\user\documents\visual studio 2013\Projects\ClassLibrary1\ClassLibrary1.ConsoleApplication1\bin\Debug\ClassLibrary1.dll
+C:\Users\user\documents\visual studio 2013\Projects\ClassLibrary1\ClassLibrary1.ConsoleApplication1\bin\Debug\ClassLibrary1.pdb
+C:\Users\user\documents\visual studio 2013\Projects\ClassLibrary1\ClassLibrary1.ConsoleApplication1\obj\Debug\ClassLibrary1.ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\user\documents\visual studio 2013\Projects\ClassLibrary1\ClassLibrary1.ConsoleApplication1\obj\Debug\ClassLibrary1.ConsoleApplication1.exe
+C:\Users\user\documents\visual studio 2013\Projects\ClassLibrary1\ClassLibrary1.ConsoleApplication1\obj\Debug\ClassLibrary1.ConsoleApplication1.pdb

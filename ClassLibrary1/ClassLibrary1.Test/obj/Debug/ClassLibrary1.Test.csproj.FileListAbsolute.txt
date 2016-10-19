@@ -1,0 +1,9 @@
+c:\Users\user\Documents\Visual Studio 2013\Projects\ClassLibrary1\ClassLibrary1.Test\obj\Debug\ClassLibrary1.Test.csprojResolveAssemblyReference.cache
+c:\Users\user\Documents\Visual Studio 2013\Projects\ClassLibrary1\ClassLibrary1.Test\bin\Debug\ClassLibrary1.Test.dll
+c:\Users\user\Documents\Visual Studio 2013\Projects\ClassLibrary1\ClassLibrary1.Test\bin\Debug\ClassLibrary1.Test.pdb
+c:\Users\user\Documents\Visual Studio 2013\Projects\ClassLibrary1\ClassLibrary1.Test\bin\Debug\ClassLibrary1.dll
+c:\Users\user\Documents\Visual Studio 2013\Projects\ClassLibrary1\ClassLibrary1.Test\bin\Debug\nunit.framework.dll
+c:\Users\user\Documents\Visual Studio 2013\Projects\ClassLibrary1\ClassLibrary1.Test\bin\Debug\ClassLibrary1.pdb
+c:\Users\user\Documents\Visual Studio 2013\Projects\ClassLibrary1\ClassLibrary1.Test\bin\Debug\nunit.framework.xml
+c:\Users\user\Documents\Visual Studio 2013\Projects\ClassLibrary1\ClassLibrary1.Test\obj\Debug\ClassLibrary1.Test.dll
+c:\Users\user\Documents\Visual Studio 2013\Projects\ClassLibrary1\ClassLibrary1.Test\obj\Debug\ClassLibrary1.Test.pdb
