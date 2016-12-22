@@ -1,1 +1,231 @@
-﻿<?xml version="1.0" encoding="utf-8" ?> 
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<render>
+  <styles>
+    <style name="background-gradient-orange"></style>
+		<style name="background-gradient-black"></style>
+		<style name="background-gradient-lightgreen"></style>
+		<style name="background-gradient-green"></style>
+		<style name="background-gradient-yellow"></style>
+		<style name="background-gradient-red"></style>
+		<style name="background-gradient-blue"></style>
+		<style name="background-gradient-lightblue"></style>
+		<style name="background-gradient-grayblue"></style>
+		<style name="background-gradient-carrot"></style>
+		<style name="background-gradient-violet"></style>
+		<style name="background-gradient-brown"></style>
+		<style name="background-gradient-piece-of-shit"></style>
+		<style name="background-gradient-red-black"></style>
+		<style name="background-fill-yellow"></style>
+		<style name="background-fill-red"></style>
+		<style name="background-fill-violet"></style>
+		<style name="frame-dot-black"></style>
+		<style name="frame-solid-red"></style>
+    <style name="frame-solid-brown"></style>
+		<style name="text-style-bold"></style>
+		<style name="text-style-capital"></style>
+    <style name="text-style-underlined"></style>
+		<style name="text-align-center"></style><!--было коммент-->
+		<style name="text-size-big"></style>
+    <style name="text-size-very-big"></style>
+		<style name="text-color-red"></style>
+		<style name="text-color-yellow"></style>
+		<style name="text-color-blue"></style>
+		<style name="text-color-white"></style>
+    <style name="text-color-brown"></style>
+    <style name="text-color-violet"></style>
+    
+
+		<style name="hide"></style>
+  </styles>
+  <tasks>
+    <columns>
+      <column name="number"></column>
+		  <column name="indicators"></column>
+		  <column name="resource"></column>
+		  <column name="taskname"></column>
+		  <column name="notes"></column>
+		  <column name="base-deadline"></column>
+		  <column name="true-deadline"></column>
+		  <column name="shift-count"></column>
+		  <column name="delay"></column>
+		  <column name="lag-reason"></column>
+		  <column name="information"></column>
+    </columns>
+    <conditions>
+      <condition name="line-PIMP"></condition>
+      
+		  <condition name="line-status-completed"></condition>
+		  <condition name="line-status-completed-ahead"></condition>
+		  <condition name="column-status-completed-ahead"></condition>
+		  <condition name="line-status-completed-partially"></condition>
+		  <condition name="line-status-completed-by-GK"></condition>
+		  <condition name="line-status-remove-from-control"></condition>
+		  <condition name="line-status-canlceld-by-applicant"></condition> <!-- Отменен заявителем-->
+		  <condition name="line-status-stopped"></condition>
+		  <condition name="line-status-unknown"></condition>
+
+		  <condition name="column-status-need-discuss"></condition>
+		  <condition name="column-status-need-result"></condition>
+		  <condition name="column-status-control-everyweek"></condition>
+
+		  <condition name="column-critical-way-true"></condition>
+
+		  <condition name="column-shift-legal"></condition>
+		  <condition name="column-shift-illegal"></condition>
+		  <condition name="column-shift-requested"></condition>
+		  <condition name="column-shift-gestation"></condition>
+		  <condition name="part-column-shift-reason"></condition>
+		  <condition name="part-column-shift-culprit"></condition>
+
+		  <condition name="part-column-risk-bad"></condition>
+
+		  <condition name="column-information-nondisplacement-deadline"></condition>
+		  <condition name="column-information-required-result"></condition>
+		  <condition name="column-information-repeated-task"></condition>
+		  <condition name="column-information-task-by-GK"></condition>
+		  <condition name="column-information-task-by-GD"></condition>
+		  <condition name="column-information-risk-squander-deadline"></condition> 
+		  <condition name="column-information-need-correction-dedline"></condition>
+
+		  <condition name="column-date-deadline-soon"></condition>
+		  <condition name="column-date-deadline-week"></condition>
+		  <condition name="column-date-deadline-squander"></condition>
+		  <condition name="column-date-unknown"></condition>
+
+		  <condition name="column-resource-unknown"></condition>
+
+		  <condition name="line-flag-hided"></condition> <!-- скрытие задач -->
+
+		  <condition name="column-priority-high"></condition>
+		  <condition name="column-priority-top"></condition>
+
+    </conditions>
+    <stylesApplications>
+      <application conditions="line-PIMP" styles="background-gradient-brown" columns="all" priority="60" final=""></application>
+		  <application conditions="line-PIMP" styles="text-style-capital, text-style-bold" columns="information" priority="61" final=""></application>
+
+		  <application conditions="line-status-completed" styles="background-gradient-lightgreen" columns="all" priority="90" final=""></application>
+		  <application conditions="line-status-completed" styles="text-style-capital, text-style-bold" columns="information" priority="91" final=""></application>
+
+		  <application conditions="line-status-completed-ahead" styles="background-gradient-lightgreen" columns="all" priority="90" final=""></application>
+		  <application conditions="line-status-completed-ahead" styles="text-style-capital, background-gradient-green, text-style-bold" columns="delay, information" priority="91" final=""></application>
+
+		  <application conditions="line-status-completed-partially" styles="background-gradient-piece-of-shit" columns="all" priority="90" final=""></application>
+		  <application conditions="line-status-completed-partially" styles="text-style-capital, text-style-bold" columns="information" priority="91" final=""></application>
+
+		  <application conditions="line-status-completed-by-GK" styles="background-gradient-grayblue" columns="all" priority="90" final=""></application>
+		  <application conditions="line-status-completed-by-GK" styles="text-style-capital, text-style-bold" columns="information" priority="91" final=""></application>
+
+		  <application conditions="line-status-remove-from-control" styles="background-gradient-blue" columns="all" priority="85" final=""></application>
+		  <application conditions="line-status-remove-from-control" styles="text-style-capital, text-style-bold" columns="information" priority="86" final=""></application>
+		
+		  <application conditions="line-status-canlceld-by-applicant" styles="background-gradient-blue" columns="all" priority="85" final=""></application>
+		  <application conditions="line-status-canlceld-by-applicant/" styles="text-style-capital, text-style-bold" columns="information" priority="86" final=""></application>
+
+		  <application conditions="line-status-stopped" styles="background-gradient-lightblue" columns="all" priority="85" final=""></application>
+		  <application conditions="line-status-stopped" styles="text-style-capital, text-style-bold" columns="information" priority="86" final=""></application>
+
+		  <application conditions="line-status-unknown" styles="background-gradient-violet" columns="all" priority="45" final=""></application>
+		  <application conditions="line-status-unknown" styles="text-style-capital, text-style-bold" columns="information" priority="46" final=""></application>
+
+
+		  <application conditions="column-status-need-discuss" styles="background-gradient-yellow, text-color-red, text-style-bold" columns="information" priority="20" final=""></application>
+
+		  <application conditions="column-status-need-result" styles="background-gradient-red, text-color-yellow, text-style-bold" columns="information" priority="21" final=""></application>
+
+		  <application conditions="column-status-control-everyweek" styles="background-gradient-lightblue, text-style-bold" columns="information" priority="15" final=""></application>
+
+		  <application conditions="column-critical-way-true" styles="background-gradient-orange, text-style-bold" columns="number" priority="55" final=""></application>
+
+
+		  <application conditions="column-shift-legal" styles="background-gradient-yellow, text-style-bold" columns="delay, lag-reason" priority="40" final=""></application>
+		  <application conditions="column-shift-legal, part-column-shift-culprit" styles="text-color-red" columns="lag-reason" priority="41" final=""></application>
+		  <application conditions="column-shift-legal, part-column-shift-reason" styles="text-color-black" columns="lag-reason" priority="41" final=""></application>
+
+
+		  <application conditions="column-shift-illegal" styles="background-gradient-red, text-style-bold" columns="delay, lag-reason" priority="40" final=""></application>
+		  <application conditions="column-shift-illegal, part-column-shift-culprit" styles="text-color-black" columns="lag-reason" priority="41" final=""></application>
+		  <application conditions="column-shift-illegal, part-column-shift-reason" styles="text-color-yellow" columns="lag-reason" priority="41" final=""></application>
+
+		  <application conditions="column-shift-requested" styles="text-style-bold" columns="delay, lag-reason" priority="40" final=""></application>
+
+		  <application conditions="column-shift-gestation" styles="background-gradient-red, text-style-bold" columns="delay, lag-reason" priority="40" final=""></application>
+		  <application conditions="column-shift-gestation, part-column-shift-culprit" styles="text-color-black" columns="lag-reason" priority="41" final=""></application>
+		  <application conditions="column-shift-gestation, part-column-shift-reason" styles="text-color-yellow" columns="lag-reason" priority="41" final=""></application>
+
+
+		  <application conditions="part-column-risk-bad" styles="background-gradient-red, text-style-bold, text-color-yellow" columns="lag-reason" priority="50" final=""></application>
+
+
+		  <application conditions="column-date-deadline-soon" styles="background-fill-violet, frame-dot-black, text-style-bold" columns="true-deadline" priority="70" final=""></application>
+		  <application conditions="column-date-deadline-week" styles="background-fill-yellow, frame-solid-red, text-style-bold, text-color-red" columns="true-deadline" priority="70" final=""></application>
+		  <application conditions="column-date-deadline-squander" styles="background-fill-red, text-style-bold, text-color-white" columns="true-deadline" priority="70" final=""></application>
+		  <application conditions="column-date-unknown" styles="background-gradient-red, text-style-bold, text-color-yellow, text-size-big" columns="true-deadline" priority="70" final=""></application>
+
+		  <application conditions="column-resource-unknown" styles="background-gradient-yellow, text-style-bold, text-size-big" columns="resource" priority="55" final=""></application>
+
+
+		  <application conditions="column-information-nondisplacement-deadline" styles="background-gradient-black, text-style-bold, text-color-yellow" columns="information" priority="70" final=""></application>
+
+		  <application conditions="column-information-nondisplacement-deadline, column-shift-legal" styles="background-gradient-red-black, text-style-bold, text-color-yellow" columns="information" priority="71" final=""></application>
+		  <application conditions="column-information-nondisplacement-deadline, column-shift-illegal" styles="background-gradient-red-black, text-style-bold, text-color-yellow" columns="information" priority="71" final=""></application>
+		  <application conditions="column-information-nondisplacement-deadline, column-shift-gestation" styles="background-gradient-red-black, text-style-bold, text-color-yellow" columns="information" priority="71" final=""></application>
+
+		  <application conditions="column-information-required-result" styles="background-gradient-red, text-style-bold, text-color-yellow" columns="information" priority="10" final=""></application>
+		  <application conditions="column-information-repeated-task" styles="background-gradient-red, text-style-bold, text-color-yellow" columns="information" priority="35" final=""></application>
+		  <application conditions="column-information-risk-squander-deadline" styles="background-gradient-red, text-style-bold, text-color-yellow" columns="information" priority="40" final=""></application>
+		  <application conditions="column-information-need-correction-dedline" styles="background-gradient-red, text-style-bold, text-color-yellow" columns="information" priority="41" final=""></application>
+		  <application conditions="column-information-task-by-GK" styles="background-gradient-carrot, text-style-bold" columns="information" priority="30" final=""></application>
+		  <application conditions="column-information-task-by-GD" styles="background-gradient-black, text-style-bold, text-color-yellow" columns="information" priority="31" final=""></application>
+
+
+		  <application conditions="column-priority-high" styles="background-gradient-yellow, text-style-bold" columns="information" priority="25" final=""></application>
+		  <application conditions="column-priority-top" styles="background-gradient-orange, text-style-bold" columns="information" priority="26" final=""></application>
+
+		  <application conditions="line-flag-hided" styles="hide" columns="all" priority="100" final=""></application>
+
+    </stylesApplications>
+  </tasks>
+  <head>
+    <cells>
+      <!--ячейки-->
+      <cell name="name"/>
+      <cell name="empty-after-name"/>
+      <cell name="asserts"/>
+      <cell name="meeteng-number"/>
+      <cell name="date"/>
+      <cell name="empty-after-date"/>
+      <cell name="responsibles"/>
+      <cell name="topic"/>
+      <cell name="invited"/>
+      <cell name="stage-number-head"/>
+      <cell name="stage-name-work-content-head"/>
+      <cell name="result-head"/>
+      <cell name="deadline-head"/>
+      <cell name="stage-number"/>
+      <cell name="stage-name-work-content"/>
+      <cell name="result"/>
+      <cell name="deadline"/>
+      <cell name="fine"/>
+      <cell name="paragraph-number-head"/>
+      <cell name="responsible-head"/>
+      <cell name="task-head"/>
+      <cell name="status-head"/>
+      <cell name="initial-deadline-head"/>
+      <cell name="expected-deadline-head"/>
+      <cell name="lag-reason-head"/>
+      <cell name="disposal"/>
+    </cells>
+    <stylesApplications>
+      <!--<applicationForCell style="" cells=""/>-->
+      <applicationForCell style="text-size-very-big" cells="name"/><!--добавить стиль-->
+    <applicationForCell style="text-style-bold" cells="all"/>
+    <applicationForCell style="text-color-brown" cells="responsibles, invited"/><!--добавить стиль-->
+    <applicationForCell style="text-color-violet" cells="topic, disposal"/><!--добавить стиль-->
+    <applicationForCell style="frame-solid-brown" cells="stage-number-head, stage-name-work-content-head, result-head, deadline-head, stage-number, stage-name-work-content, result, deadline, fine, disposal"/><!--добавить стиль-->
+    <applicationForCell style="text-style-capital" cells="stage-number, stage-name-work-content, result, deadline, fine"/>
+    <applicationForCell style="text-style-underlined" cells="fine, disposal"/><!--добавить стиль-->
+    <applicationForCell style="text-color-red" cells="deadline"/>
+    </stylesApplications>
+  </head>
+</render>

@@ -4,6 +4,11 @@ c:\Users\user\Documents\Visual Studio 2013\Projects\ClassLibrary1\ClassLibrary1\
 c:\Users\user\Documents\Visual Studio 2013\Projects\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
 D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.dll
 D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
-D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.csprojResolveAssemblyReference.cache
 D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1\bin\Debug\AngleSharp.dll
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1\bin\Debug\AngleSharp.xml
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.csprojResolveAssemblyReference.cache
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1\bin\Debug\Mcst.dll
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1\bin\Debug\Mcst.pdb
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1\bin\Debug\Mcst.xml

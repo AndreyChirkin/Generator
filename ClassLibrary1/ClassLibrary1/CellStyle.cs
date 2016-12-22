@@ -9,7 +9,21 @@ namespace ClassLibrary1
     {
         public CellStyle()
         {
+            hide = false;
+
             borderDepth = 0;
+
+            backgroundType = BackgroundType.Solid;
+            BackgroundColor = new Color(255, 255, 255, 1);
+            SideGradientColor = new Color(255, 255, 255, 1);
+
+            borderType = BorderType.Solid;
+            BorderColor = new Color(0, 0, 0, 1);
+
+            borderDepth = 1;
+
+            colspan = 1;
+            align = Align.left;
         }
 
         public CellStyle(int value)
@@ -17,18 +31,20 @@ namespace ClassLibrary1
             borderDepth = value;
         }
 
-        public BackgroundType backgroundType;
+        public bool hide { get; set; }
 
-        public BorderType borderType;
+        public BackgroundType backgroundType { get; set; }
+
+        public BorderType borderType { get; set; }
 
         private int borderDepth;
 
         private int colspan;
 
-        public Align align;
+        public Align align { get; set; }
 
         //выравнивание
-        public enum Align { left, center, right };
+        public enum Align { left, center, right, justify };
 
         //тип фона
         public enum BackgroundType { Solid, Gradient };

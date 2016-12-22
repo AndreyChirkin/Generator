@@ -74,14 +74,14 @@ namespace ClassLibrary1.Test
             Assert.That(test.Result == "");
         }
 
-        [Test]
-        public void TestHtmlGeneratorRenderBegin()
-        {
-            String expectedResult = "<!DOCTYPE HTML>\n<html>\n<head>\n<meta charset='utf-8'>\n</head>\n <body>\n<table cols='7' width='1100' border='1' cellspacing='0'>\n";
-            HtmlGenerator test = new HtmlGenerator();
-            test.RenderBegin();
-            Assert.That(expectedResult == test.Result);
-        }
+        //[Test]
+        //public void TestHtmlGeneratorRenderBegin()
+        //{
+        //    String expectedResult = "<!DOCTYPE HTML>\n<html>\n<head>\n<meta charset='utf-8'>\n</head>\n <body>\n<table cols='7' width='1100' border='1' cellspacing='0'>\n";
+        //    HtmlGenerator test = new HtmlGenerator();
+        //    test.RenderBegin();
+        //    Assert.That(expectedResult == test.Result);
+        //}
 
         [Test]
         public void TestHtmlGeneratorRenderBeginException()
@@ -312,5 +312,7 @@ namespace ClassLibrary1.Test
             File.WriteAllText("D:\\Users\\chirkin_a\\Desktop\\NewFile.html", test.Result);
             Assert.AreEqual(test.state, HtmlGenerator.State.begin);
         }
+
+        
     }
 }

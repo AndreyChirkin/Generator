@@ -16,3 +16,8 @@ D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.Test\bin\D
 D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.Test\obj\Debug\ClassLibrary1.Test.csprojResolveAssemblyReference.cache
 D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.Test\obj\Debug\ClassLibrary1.Test.dll
 D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.Test\obj\Debug\ClassLibrary1.Test.pdb
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.Test\bin\Debug\AngleSharp.dll
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.Test\bin\Debug\Microsoft.ProjectServer.Client.dll
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.Test\bin\Debug\Microsoft.SharePoint.Client.dll
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.Test\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.Test\bin\Debug\AngleSharp.xml

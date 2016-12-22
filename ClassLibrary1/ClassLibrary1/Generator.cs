@@ -17,8 +17,12 @@ namespace ClassLibrary1
         //генерация ячейки
         void RenderCell(CellStyle c_style);
 
+        void RenderParagraph(TextStyle t_style);
+
         //генерация текста
         void RenderText(TextStyle t_style, String text);
+
+        void RenderTextBlock(CellStyle c_style, TextStyle t_style, String text);
 
         //генерация закрывающего тега
         void RenderEnd();

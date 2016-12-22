@@ -14,3 +14,8 @@ D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.ConsoleApp
 D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.ConsoleApplication1\obj\Debug\ClassLibrary1.ConsoleApplication1.csprojResolveAssemblyReference.cache
 D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.ConsoleApplication1\obj\Debug\ClassLibrary1.ConsoleApplication1.exe
 D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.ConsoleApplication1\obj\Debug\ClassLibrary1.ConsoleApplication1.pdb
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.ConsoleApplication1\bin\Debug\Mcst.dll
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.ConsoleApplication1\bin\Debug\Mcst.pdb
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.ConsoleApplication1\bin\Debug\Mcst.xml
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.ConsoleApplication1\bin\Debug\AngleSharp.dll
+D:\Users\chirkin_a\Source\Repos\Generator\ClassLibrary1\ClassLibrary1.ConsoleApplication1\bin\Debug\AngleSharp.xml

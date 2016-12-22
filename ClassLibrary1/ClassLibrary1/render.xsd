@@ -6,5 +6,101 @@
     xmlns:mstns="http://tempuri.org/render.xsd"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
 >
-  
+  <xs:element name="Render">
+    <xs:complexType>      
+      <xs:sequence>
+        <xs:element name="styles" type="stylesType" />
+        <xs:element name="tasks" type="tasksType" />
+        <xs:element name="head" type="headType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="stylesType"><!--тип стилей-->
+    <xs:sequence>
+      <xs:element name="style">
+        <xs:complexType>
+          <xs:attribute name="name" type="xs:string" use="required" />
+        </xs:complexType>
+        <!--последовательность стилей-->
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tasksType"><!--тип задач-->
+    <xs:sequence>
+      <xs:element name="columns" type="columnType">
+        <!--список колонок-->
+      </xs:element>
+      <xs:element name="conditions" type="conditionType">
+        <!--список условий-->
+      </xs:element>
+      <xs:element name="stylesApplications" type="applicationsType">
+        <!--последовательность применений-->
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="headType"><!--тип шапки-->
+    <xs:sequence>
+      <xs:element name="cells" type="cellsType">
+        <!--последовательность ячеек-->
+      </xs:element>
+      <xs:element name="stylesApplications" type="applicationsForCellsType">
+        <!--последовательность применений-->
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="columnType"><!--тип column-->
+    <xs:sequence>
+      <xs:element name="column">
+        <xs:complexType>
+          <xs:attribute name="name" type="xs:string" use="required" />
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="conditionType">
+    <!--тип condition-->
+    <xs:sequence>
+      <xs:element name="condition">
+        <xs:complexType>
+          <xs:attribute name="name" type="xs:string" use="required"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="applicationsType">
+    <!--тип applications-->
+    <xs:sequence>
+      <xs:element name="application">
+        <xs:complexType>
+          <xs:attribute name="styles" type="xs:string" use="required" />
+          <xs:attribute name="columns" type="xs:string" />
+          <xs:attribute name="conditions" type="xs:string" />
+          <xs:attribute name="priority" type="xs:integer" />
+          <xs:attribute name="final" type="xs:boolean" />
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cellsType">
+    <!--тип cells-->
+    <xs:sequence>
+      <xs:element name="cell">
+        <xs:complexType>
+          <xs:attribute name="name" type="xs:string" use="required" />
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="applicationsForCellsType">
+    <!--тип applicationsForCells-->
+    <xs:sequence>
+      <xs:element name="applicationForCell">
+        <xs:complexType>
+          <xs:attribute name="style" type="xs:string" use="required" />
+          <xs:attribute name="cells" type="xs:string" />
+          <xs:attribute name="priority" type="xs:integer" />
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
 </xs:schema>

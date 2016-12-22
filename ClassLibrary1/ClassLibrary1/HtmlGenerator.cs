@@ -14,7 +14,7 @@ namespace ClassLibrary1
         //public String state;
         public State state;
 
-        public enum State { begin, table, row, cell };
+        public enum State { begin, table, row, cell, paragraph };
 
         public HtmlGenerator()
         {
@@ -26,7 +26,7 @@ namespace ClassLibrary1
         {
             if (state != State.begin)
                 throw new InvalidOperationException();
-            Result += String.Format("<!DOCTYPE HTML>\n<html>\n<head>\n<meta charset='utf-8'>\n</head>\n <body>\n<table cols='7' width='1100' border='1' cellspacing='0'>\n");
+            Result += String.Format("<!DOCTYPE HTML>\n<html>\n<head>\n<meta charset='utf-8'>\n</head>\n <body>\n<table style='border-collapse: collapse' cols='7' border='1' cellspacing='0'>\n");
             state = State.table;//InvalidOperationException
         }
 
@@ -40,6 +40,7 @@ namespace ClassLibrary1
 
         public void RenderCell(CellStyle c_style)
         {
+            string displayNone = "";
             if (state != State.row)
                 throw new InvalidOperationException();
 
@@ -67,19 +68,32 @@ namespace ClassLibrary1
                     throw new ArgumentOutOfRangeException();
             }
 
+            if (c_style.hide)
+                displayNone += "display: none; ";
+
             switch (c_style.backgroundType)
             {
                 case CellStyle.BackgroundType.Solid:
-                    Result += $"<td style='background-color: {backgroundColor}; border: {c_style.BorderDepth}px {borderType} {borderColor}' align='{c_style.align}' colspan='{c_style.Colspan}'>\n";
+                    Result += $"<td style='height:1px; {displayNone}background-color: {backgroundColor}; border: {c_style.BorderDepth}px {borderType} {borderColor}' align='{c_style.align}' colspan='{c_style.Colspan}'>\n";
                     break;
                 case CellStyle.BackgroundType.Gradient:
-                    Result += String.Format("<td style='background: linear-gradient(to top, {0} 0%,{1} 50%,{1} 50%,{0} 100%); border:{2}px {3} {4}' align='{5}' colspan='{6}'>\n", sideGradintColor, backgroundColor, c_style.BorderDepth, borderType, borderColor, c_style.align, c_style.Colspan);
+                    Result += $"<td style='height:1px; {displayNone}background: {backgroundColor}; background: linear-gradient(to top, {sideGradintColor} 0%,{backgroundColor} 50%,{backgroundColor} 50%,{sideGradintColor} 100%); border:{c_style.BorderDepth}px {borderType} {borderColor}' align='{c_style.align}' colspan='{c_style.Colspan}'>\n";
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
             }
 
             state = State.cell;
+        }
+
+        public void RenderParagraph(TextStyle t_style)
+        {
+            if (state != State.cell)
+                throw new InvalidOperationException();
+
+            Result += $"<p style='text-align: {t_style.align}'>\n";
+
+            state = State.paragraph;
         }
 
         public void RenderText(TextStyle t_style, String text)
@@ -99,7 +113,10 @@ namespace ClassLibrary1
             if (t_style.italic)
                 text_Style += "italic ";
 
-            text_Style += t_style.fontSize.ToString() + "pt ";
+            if (t_style.capital)
+                text_Style += "small-caps ";
+
+            text_Style += t_style.fontSize.ToString() + "px ";
             text_Style += t_style.font;
 
             if (t_style.underlined)
@@ -109,7 +126,55 @@ namespace ClassLibrary1
 
 
 
-            Result += String.Format("<span style='font: {0}; color: {1}'>{2}</span>\n", text_Style, textColor, text);
+            Result += $"<span style='font: {text_Style}; color: {textColor}'>{text}</span>";
+        }
+        
+        public void RenderTextBlock(CellStyle c_style, TextStyle t_style, String text)
+        {
+            if (text == null)
+                throw new ArgumentNullException();
+
+            if (t_style == null)
+                throw new ArgumentNullException();
+
+            if (c_style == null)
+                throw new ArgumentNullException();
+
+            String text_Style = "";
+            String textColor = "";
+
+            if (t_style.bold)
+                text_Style += "bold ";
+
+            if (t_style.italic)
+                text_Style += "italic ";
+
+            text_Style += t_style.fontSize.ToString() + "px ";
+            text_Style += t_style.font;
+
+            if (t_style.underlined)
+                text_Style += "; text-decoration: underline";
+
+            textColor += "rgba(" + t_style.textColor.red + "," + t_style.textColor.green + "," + t_style.textColor.blue + "," + t_style.textColor.a.ToString(CultureInfo.CreateSpecificCulture("en-US")) + ")";
+
+            String backgroundColor = "";
+            String sideGradintColor = "";
+
+            backgroundColor += "rgba(" + c_style.BackgroundColor.red + "," + c_style.BackgroundColor.green + "," + c_style.BackgroundColor.blue + "," + c_style.BackgroundColor.a.ToString(CultureInfo.CreateSpecificCulture("en-US")) + ")";
+            sideGradintColor += "rgba(" + c_style.SideGradientColor.red + "," + c_style.SideGradientColor.green + "," + c_style.SideGradientColor.blue + "," + c_style.SideGradientColor.a.ToString(CultureInfo.CreateSpecificCulture("en-US")) + ")";
+           
+            switch (c_style.backgroundType)
+            {
+                case CellStyle.BackgroundType.Solid:
+                    Result += $"<span style='height:50%; display: block; background-color: {backgroundColor}; font: {text_Style}; color: {textColor}'>{text}</span>\n";
+                    break;
+                case CellStyle.BackgroundType.Gradient:
+                    Result += $"<span style='height:50%; display: block; background: {backgroundColor}; background: linear-gradient(to top, {sideGradintColor} 0%,{backgroundColor} 50%,{backgroundColor} 50%,{sideGradintColor} 100%); font: {text_Style}; color: {textColor}'>{text}</span>\n";
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+
         }
 
         public void RenderEnd()  
@@ -127,6 +192,10 @@ namespace ClassLibrary1
                 case State.cell:
                     Result += "</td>\n";
                     state = State.row;
+                    break;
+                case State.paragraph:
+                    Result += "</p>\n";
+                    state = State.cell;
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();

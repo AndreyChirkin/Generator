@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Render>
+  <styles>
+    <Style name="background-gradient-orange">
+      <setters>
+        <Setter path="BackgroundColor.red" value="254"/>
+        <Setter path="BackgroundColor.green" value="153"/>
+        <Setter path="BackgroundColor.blue" value="0"/>
+        <Setter path="BackgroundColor.a" value="1"/>
+        <Setter path="SideGradientColor.red" value="255"/>
+        <Setter path="SideGradientColor.green" value="255"/>
+        <Setter path="SideGradientColor.blue" value="255"/>
+        <Setter path="SideGradientColor.a" value="1"/>
+        <Setter path="backgroundType" value="Gradient"/>
+      </setters>
+    </Style>
+    <Style name="background-gradient-black">
+      <setters>
+        <Setter path="BackgroundColor.red" value="0"/>
+        <Setter path="BackgroundColor.green" value="0"/>
+        <Setter path="BackgroundColor.blue" value="0"/>
+        <Setter path="BackgroundColor.a" value="1"/>
+        <Setter path="SideGradientColor.red" value="255"/>
+        <Setter path="SideGradientColor.green" value="255"/>
+        <Setter path="SideGradientColor.blue" value="255"/>
+        <Setter path="SideGradientColor.a" value="1"/>
+        <Setter path="backgroundType" value="Gradient"/>
+      </setters>
+    </Style>
+    <Style name="background-gradient-lightgreen">
+      <setters>
+        <Setter path="BackgroundColor.red" value="204"/>
+        <Setter path="BackgroundColor.green" value="255"/>
+        <Setter path="BackgroundColor.blue" value="153"/>
+        <Setter path="BackgroundColor.a" value="1"/>
+        <Setter path="SideGradientColor.red" value="255"/>
+        <Setter path="SideGradientColor.green" value="255"/>
+        <Setter path="SideGradientColor.blue" value="255"/>
+        <Setter path="SideGradientColor.a" value="1"/>
+        <Setter path="backgroundType" value="Gradient"/>
+      </setters>
+    </Style>
+    <Style name="background-gradient-green">
+      <setters>
+        <Setter path="BackgroundColor.red" value="0"/>
+        <Setter path="BackgroundColor.green" value="255"/>
+        <Setter path="BackgroundColor.blue" value="0"/>
+        <Setter path="BackgroundColor.a" value="1"/>
+        <Setter path="SideGradientColor.red" value="255"/>
+        <Setter path="SideGradientColor.green" value="255"/>
+        <Setter path="SideGradientColor.blue" value="255"/>
+        <Setter path="SideGradientColor.a" value="1"/>
+        <Setter path="backgroundType" value="Gradient"/>
+      </setters>
+    </Style>
+    <Style name="background-gradient-yellow">
+      <setters>
+        <Setter path="BackgroundColor.red" value="255"/>
+        <Setter path="BackgroundColor.green" value="255"/>
+        <Setter path="BackgroundColor.blue" value="51"/>
+        <Setter path="BackgroundColor.a" value="1"/>
+        <Setter path="SideGradientColor.red" value="255"/>
+        <Setter path="SideGradientColor.green" value="255"/>
+        <Setter path="SideGradientColor.blue" value="255"/>
+        <Setter path="SideGradientColor.a" value="1"/>
+        <Setter path="backgroundType" value="Gradient"/>
+      </setters>
+    </Style>
+    <Style name="background-gradient-red">
+      <setters>
+        <Setter path="BackgroundColor.red" value="255"/>
+        <Setter path="BackgroundColor.green" value="0"/>
+        <Setter path="BackgroundColor.blue" value="51"/>
+        <Setter path="BackgroundColor.a" value="1"/>
+        <Setter path="SideGradientColor.red" value="255"/>
+        <Setter path="SideGradientColor.green" value="255"/>
+        <Setter path="SideGradientColor.blue" value="255"/>
+        <Setter path="SideGradientColor.a" value="1"/>
+        <Setter path="backgroundType" value="Gradient"/>
+      </setters>
+    </Style>
+    <Style name="background-gradient-blue">
+      <setters>
+        <Setter path="BackgroundColor.red" value="51"/>
+        <Setter path="BackgroundColor.green" value="102"/>
+        <Setter path="BackgroundColor.blue" value="153"/>
+        <Setter path="BackgroundColor.a" value="1"/>
+        <Setter path="SideGradientColor.red" value="255"/>
+        <Setter path="SideGradientColor.green" value="255"/>
+        <Setter path="SideGradientColor.blue" value="255"/>
+        <Setter path="SideGradientColor.a" value="1"/>
+        <Setter path="backgroundType" value="Gradient"/>
+      </setters>
+    </Style>
+    <Style name="background-gradient-lightblue">
+      <setters>
+        <Setter path="BackgroundColor.red" value="153"/>
+        <Setter path="BackgroundColor.green" value="204"/>
+        <Setter path="BackgroundColor.blue" value="255"/>
+        <Setter path="BackgroundColor.a" value="1"/>
+        <Setter path="SideGradientColor.red" value="255"/>
+        <Setter path="SideGradientColor.green" value="255"/>
+        <Setter path="SideGradientColor.blue" value="255"/>
+        <Setter path="SideGradientColor.a" value="1"/>
+        <Setter path="backgroundType" value="Gradient"/>
+      </setters>
+    </Style>
+    <Style name="background-gradient-grayblue">
+      <setters>
+        <Setter path="BackgroundColor.red" value="151"/>
+        <Setter path="BackgroundColor.green" value="180"/>
+        <Setter path="BackgroundColor.blue" value="216"/>
+        <Setter path="BackgroundColor.a" value="1"/>
+        <Setter path="SideGradientColor.red" value="255"/>
+        <Setter path="SideGradientColor.green" value="255"/>
+        <Setter path="SideGradientColor.blue" value="255"/>
+        <Setter path="SideGradientColor.a" value="1"/>
+        <Setter path="backgroundType" value="Gradient"/>
+      </setters>
+    </Style>
+    <Style name="background-gradient-carrot">
+      <setters>
+        <Setter path="BackgroundColor.red" value="255"/>
+        <Setter path="BackgroundColor.green" value="51"/>
+        <Setter path="BackgroundColor.blue" value="0"/>
+        <Setter path="BackgroundColor.a" value="1"/>
+        <Setter path="SideGradientColor.red" value="255"/>
+        <Setter path="SideGradientColor.green" value="255"/>
+        <Setter path="SideGradientColor.blue" value="255"/>
+        <Setter path="SideGradientColor.a" value="1"/>
+        <Setter path="backgroundType" value="Gradient"/>
+      </setters>
+    </Style>
+    <Style name="background-gradient-violet">
+      <setters>
+        <Setter path="BackgroundColor.red" value="255"/>
+        <Setter path="BackgroundColor.green" value="108"/>
+        <Setter path="BackgroundColor.blue" value="255"/>
+        <Setter path="BackgroundColor.a" value="1"/>
+        <Setter path="SideGradientColor.red" value="255"/>
+        <Setter path="SideGradientColor.green" value="255"/>
+        <Setter path="SideGradientColor.blue" value="255"/>
+        <Setter path="SideGradientColor.a" value="1"/>
+        <Setter path="backgroundType" value="Gradient"/>
+      </setters>
+    </Style>
+    <Style name="background-gradient-brown">
+      <setters>
+        <Setter path="BackgroundColor.red" value="153"/>
+        <Setter path="BackgroundColor.green" value="102"/>
+        <Setter path="BackgroundColor.blue" value="51"/>
+        <Setter path="BackgroundColor.a" value="1"/>
+        <Setter path="SideGradientColor.red" value="255"/>
+        <Setter path="SideGradientColor.green" value="255"/>
+        <Setter path="SideGradientColor.blue" value="255"/>
+        <Setter path="SideGradientColor.a" value="1"/>
+        <Setter path="backgroundType" value="Gradient"/>
+      </setters>
+    </Style>
+    <Style name="background-gradient-piece-of-shit">
+      <setters>
+        <Setter path="BackgroundColor.red" value="102"/>
+        <Setter path="BackgroundColor.green" value="102"/>
+        <Setter path="BackgroundColor.blue" value="0"/>
+        <Setter path="BackgroundColor.a" value="1"/>
+        <Setter path="SideGradientColor.red" value="255"/>
+        <Setter path="SideGradientColor.green" value="255"/>
+        <Setter path="SideGradientColor.blue" value="255"/>
+        <Setter path="SideGradientColor.a" value="1"/>
+        <Setter path="backgroundType" value="Gradient"/>
+      </setters>
+    </Style>
+    <Style name="background-gradient-red-black">
+      <setters>
+        <Setter path="BackgroundColor.red" value="255"/>
+        <Setter path="BackgroundColor.green" value="0"/>
+        <Setter path="BackgroundColor.blue" value="0"/>
+        <Setter path="BackgroundColor.a" value="1"/>
+        <Setter path="SideGradientColor.red" value="0"/>
+        <Setter path="SideGradientColor.green" value="0"/>
+        <Setter path="SideGradientColor.blue" value="0"/>
+        <Setter path="SideGradientColor.a" value="1"/>
+        <Setter path="backgroundType" value="Gradient"/>
+      </setters>
+    </Style>
+    <Style name="background-fill-yellow">
+      <setters>
+        <Setter path="BackgroundColor.red" value="255"/>
+        <Setter path="BackgroundColor.green" value="255"/>
+        <Setter path="BackgroundColor.blue" value="0"/>
+        <Setter path="BackgroundColor.a" value="1"/>
+        <Setter path="backgroundType" value="Solid"/>
+      </setters>
+    </Style>
+    <Style name="background-fill-red">
+      <setters>
+        <Setter path="BackgroundColor.red" value="255"/>
+        <Setter path="BackgroundColor.green" value="0"/>
+        <Setter path="BackgroundColor.blue" value="51"/>
+        <Setter path="BackgroundColor.a" value="1"/>
+        <Setter path="backgroundType" value="Solid"/>
+      </setters>
+    </Style>
+    <Style name="background-fill-violet">
+      <setters>
+        <Setter path="BackgroundColor.red" value="204"/>
+        <Setter path="BackgroundColor.green" value="153"/>
+        <Setter path="BackgroundColor.blue" value="255"/>
+        <Setter path="BackgroundColor.a" value="1"/>
+        <Setter path="backgroundType" value="Solid"/>
+      </setters>
+    </Style>
+    <Style name="frame-dot-black">
+      <setters>
+        <Setter path="borderType" value="Hatch"/>
+        <Setter path="BorderColor.red" value="0"/>
+        <Setter path="BorderColor.green" value="0"/>
+        <Setter path="BorderColor.blue" value="0"/>
+        <Setter path="BorderColor.a" value="1"/>
+      </setters>
+    </Style>
+    <Style name="frame-solid-red">
+      <setters>
+        <Setter path="borderType" value="Solid"/>
+        <Setter path="BorderColor.red" value="255"/>
+        <Setter path="BorderColor.green" value="0"/>
+        <Setter path="BorderColor.blue" value="0"/>
+        <Setter path="BorderColor.a" value="1"/>
+      </setters>
+    </Style>
+    <Style name="frame-solid-brown">
+      <setters>
+        <Setter path="borderType" value="Solid"/>
+        <Setter path="BorderColor.red" value="153"/>
+        <Setter path="BorderColor.green" value="102"/>
+        <Setter path="BorderColor.blue" value="51"/>
+        <Setter path="BorderColor.a" value="1"/>
+      </setters>
+    </Style>
+    <Style name="text-Style-bold">
+      <setters>
+        <Setter path="bold" value="true"/>
+      </setters>
+    </Style>
+    <Style name="text-Style-italic">
+      <setters>
+        <Setter path="italic" value="true"/>
+      </setters>
+    </Style>
+    <Style name="text-Style-capital">
+      <setters>
+        <Setter path="capital" value="true"/>
+      </setters>
+    </Style>
+    <Style name="text-Style-underlined">
+      <setters>
+        <Setter path="underlined" value="true"/>
+      </setters>
+    </Style>
+    <Style name="text-align-center">
+      <setters>
+        <Setter path="align" value="center"/>
+      </setters>
+    </Style>
+    <!--было коммент-->
+    <Style name="text-size-big">
+      <setters>
+        <Setter path="fontSize" value="14"/>
+      </setters>
+    </Style>
+    <Style name="text-size-very-big" target="text">
+      <setters>
+        <Setter path="fontSize" value="20"/>
+      </setters>
+    </Style>
+    <Style name="text-color-red">
+      <setters>
+        <Setter path="textColor.red" value="255"/>
+        <Setter path="textColor.green" value="0"/>
+        <Setter path="textColor.blue" value="0"/>
+        <Setter path="textColor.a" value="1"/>
+      </setters>
+    </Style>
+    <Style name="text-color-yellow">
+      <setters>
+        <Setter path="textColor.red" value="255"/>
+        <Setter path="textColor.green" value="255"/>
+        <Setter path="textColor.blue" value="51"/>
+        <Setter path="textColor.a" value="1"/>
+      </setters>
+    </Style>
+    <Style name="text-color-blue">
+      <setters>
+        <Setter path="textColor.red" value="51"/>
+        <Setter path="textColor.green" value="102"/>
+        <Setter path="textColor.blue" value="153"/>
+        <Setter path="textColor.a" value="1"/>
+      </setters>
+    </Style>
+    <Style name="text-color-white">
+      <setters>
+        <Setter path="textColor.red" value="255"/>
+        <Setter path="textColor.green" value="255"/>
+        <Setter path="textColor.blue" value="255"/>
+        <Setter path="textColor.a" value="1"/>
+      </setters>
+    </Style>
+    <Style name="text-color-brown">
+      <setters>
+        <Setter path="textColor.red" value="153"/>
+        <Setter path="textColor.green" value="102"/>
+        <Setter path="textColor.blue" value="51"/>
+        <Setter path="textColor.a" value="1"/>
+      </setters>
+    </Style>
+    <Style name="text-color-violet">
+      <setters>
+        <Setter path="textColor.red" value="255"/>
+        <Setter path="textColor.green" value="108"/>
+        <Setter path="textColor.blue" value="255"/>
+        <Setter path="textColor.a" value="1"/>
+      </setters>
+    </Style>
+    <Style name="text-color-black">
+      <setters>
+        <Setter path="textColor.red" value="0"/>
+        <Setter path="textColor.green" value="0"/>
+        <Setter path="textColor.blue" value="0"/>
+        <Setter path="textColor.a" value="1"/>
+      </setters>
+    </Style>
+
+
+    <Style name="hide">
+      <setters>
+        <Setter path="hide" value="true"/>
+      </setters>
+    </Style>
+  </styles>
+  <Tasks>
+    <Columns>
+      <Column name="number" rusname="№ пп,"></Column><!-- -->
+      <Column name="indicators" rusname="Индикаторы"></Column><!-- ismilstone - флажлок приоритет - лампочка -->
+      <Column name="resource" rusname="Исполнители"></Column><!-- друг за другом фамилия и.о /если нет никого - ??? -->
+      <Column name="taskname" rusname="Задание согласно плану ОКР"></Column><!--name -->
+      <Column name="notes" rusname="Заметки"></Column><!-- -->
+      <Column name="base-deadline" rusname="Первоначальный срок выполнения"></Column><!-- -->
+      <Column name="true-deadline" rusname="Ожидаемый срок выполнения"></Column><!-- finish-->
+      <Column name="shift-count" rusname="Сдвиг"></Column><!-- пустая строка-->
+      <Column name="delay" rusname="Задержка"></Column><!--finish - basefinish если ничего нет то пустая строка/ в неделях или в месяцах если она большая -->
+      <Column name="lag-reason" rusname="Причина отставания"></Column><!-- lag-reason-->
+      <Column name="information" rusname="Информация"></Column><!--traits  -->
+    </Columns>
+    <conditions>
+      <Condition name="line-PIMP"></Condition>
+
+      <Condition name="line-status-completed"></Condition>
+      <Condition name="line-status-completed-ahead"></Condition>
+      <Condition name="column-status-completed-ahead"></Condition>
+      <Condition name="line-status-completed-partially"></Condition>
+      <Condition name="line-status-completed-by-GK"></Condition>
+      <Condition name="line-status-remove-from-control"></Condition>
+      <Condition name="line-status-canceled-by-applicant"></Condition>
+      <!-- Отменен заявителем-->
+      <Condition name="line-status-stopped"></Condition>
+      <Condition name="line-status-unknown"></Condition>
+
+      <Condition name="column-status-need-discuss"></Condition>
+      <Condition name="column-status-need-result"></Condition>
+      <Condition name="column-status-control-everyweek"></Condition>
+
+      <Condition name="column-critical-way-true"></Condition>
+
+      <Condition name="column-shift-legal"></Condition>
+      <Condition name="column-shift-illegal"></Condition>
+      <Condition name="column-shift-requested"></Condition>
+      <Condition name="column-shift-gestation"></Condition>
+      <Condition name="part-column-shift-reason"></Condition>
+      <Condition name="part-column-shift-culprit"></Condition>
+
+      <Condition name="part-column-risk-bad"></Condition>
+
+      <Condition name="column-information-nondisplacement-deadline"></Condition>
+      <Condition name="column-information-required-result"></Condition>
+      <Condition name="column-information-repeated-task"></Condition>
+      <Condition name="column-information-task-by-GK"></Condition>
+      <Condition name="column-information-task-by-GD"></Condition>
+      <Condition name="column-information-risk-squander-deadline"></Condition>
+      <Condition name="column-information-need-correction-dedline"></Condition>
+
+      <Condition name="column-date-deadline-soon"></Condition><!--20дн -0дн-->
+      <Condition name="column-date-deadline-week"></Condition><!--прошла < неделя-->
+      <Condition name="column-date-deadline-squander"></Condition><!--прошло больше недели-->
+      <Condition name="column-date-unknown"></Condition>
+
+      <Condition name="column-lag-reason-blocked"></Condition>
+
+      <Condition name="column-resource-unknown"></Condition>
+
+      <Condition name="line-flag-hided"></Condition>
+      <!-- скрытие задач -->
+
+      <Condition name="column-priority-high"></Condition>
+      <Condition name="column-priority-top"></Condition>
+
+    </conditions>
+    <StylesApplications>
+      <Application conditions="line-PIMP" styles="background-gradient-brown" columns="all" priority="60" final="false"></Application>
+      <!--<Application conditions="line-PIMP" styles="text-style-capital, text-style-bold" columns="information" priority="61" final="false"></Application>-->
+
+      <Application conditions="line-status-completed" styles="background-gradient-lightgreen" columns="all" priority="90" final="false"></Application>
+      <!--<Application conditions="line-status-completed" styles="text-style-capital, text-style-bold" columns="information" priority="91" final="false"></Application>-->
+
+      <Application conditions="line-status-completed-ahead" styles="background-gradient-lightgreen" columns="all" priority="90" final="false"></Application>
+      <!--<Application conditions="line-status-completed-ahead" styles="text-style-capital, background-gradient-green, text-style-bold" columns="delay, information" priority="91" final="false"></Application>-->
+
+      <Application conditions="line-status-completed-partially" styles="background-gradient-piece-of-shit" columns="all" priority="90" final="false"></Application>
+      <!--<Application conditions="line-status-completed-partially" styles="text-style-capital, text-style-bold" columns="information" priority="91" final="false"></Application>-->
+
+      <Application conditions="line-status-completed-by-GK" styles="background-gradient-grayblue" columns="all" priority="90" final="false"></Application>
+      <!--<Application conditions="line-status-completed-by-GK" styles="text-style-capital, text-style-bold" columns="information" priority="91" final="false"></Application>-->
+
+      <Application conditions="line-status-remove-from-control" styles="background-gradient-blue" columns="all" priority="85" final="false"></Application>
+      <!--<Application conditions="line-status-remove-from-control" styles="text-style-capital, text-style-bold" columns="information" priority="86" final="false"></Application>-->
+
+      <Application conditions="line-status-canlceld-by-applicant" styles="background-gradient-blue" columns="all" priority="85" final="false"></Application>
+      <!--<Application conditions="line-status-canlceld-by-applicant/" styles="text-style-capital, text-style-bold" columns="information" priority="86" final="false"></Application>-->
+
+      <Application conditions="line-status-stopped" styles="background-gradient-lightblue" columns="all" priority="85" final="false"></Application>
+      <!--<Application conditions="line-status-stopped" styles="text-style-capital, text-style-bold" columns="information" priority="86" final="false"></Application>-->
+
+      <Application conditions="line-status-unknown" styles="background-gradient-violet" columns="all" priority="45" final="false"></Application>
+      <!--<Application conditions="line-status-unknown" styles="text-style-capital, text-style-bold" columns="information" priority="46" final="false"></Application>-->
+
+
+      <Application conditions="column-status-need-discuss" styles="background-gradient-yellow" columns="information" priority="20" final="false"></Application>
+<!--, text-color-red, text-style-bold-->
+      <Application conditions="column-status-need-result" styles="background-gradient-red" columns="information" priority="21" final="false"></Application>
+<!--, text-color-yellow, text-style-bold-->
+      <Application conditions="column-status-control-everyweek" styles="background-gradient-lightblue" columns="information" priority="15" final="false"></Application>
+<!--, text-style-bold-->
+      <Application conditions="column-critical-way-true" styles="background-gradient-orange" columns="number" priority="55" final="false"></Application>
+<!--, text-style-bold-->
+
+      <!--, text-style-bold--><Application conditions="column-shift-legal" styles="background-gradient-yellow" columns="delay, lag-reason" priority="40" final="false"></Application>
+      <!--<Application conditions="column-shift-legal, part-column-shift-culprit" styles="text-color-red" columns="lag-reason" priority="41" final="false"></Application>-->
+      <!--<Application conditions="column-shift-legal, part-column-shift-reason" styles="text-color-black" columns="lag-reason" priority="41" final="false"></Application>-->
+
+
+      <!--, text-style-bold--><Application conditions="column-shift-illegal" styles="background-gradient-red" columns="delay, lag-reason" priority="40" final="false"></Application>
+      <!--<Application conditions="column-shift-illegal, part-column-shift-culprit" styles="text-color-black" columns="lag-reason" priority="41" final="false"></Application>
+      <Application conditions="column-shift-illegal, part-column-shift-reason" styles="text-color-yellow" columns="lag-reason" priority="41" final="false"></Application>-->
+
+      <!--<Application conditions="column-shift-requested" styles="text-style-bold" columns="delay, lag-reason" priority="40" final="false"></Application>-->
+
+      <!--, text-style-bold--><Application conditions="column-shift-gestation" styles="background-gradient-red" columns="delay, lag-reason" priority="40" final="false"></Application>
+      <!--<Application conditions="column-shift-gestation, part-column-shift-culprit" styles="text-color-black" columns="lag-reason" priority="41" final="false"></Application>
+      <Application conditions="column-shift-gestation, part-column-shift-reason" styles="text-color-yellow" columns="lag-reason" priority="41" final="false"></Application>-->
+
+
+      <Application conditions="part-column-risk-bad" styles="background-gradient-red" columns="lag-reason" priority="50" final="false"></Application>
+<!--, text-style-bold, text-color-yellow-->
+
+      <!--, text-style-bold--><Application conditions="column-date-deadline-soon" styles="background-fill-violet, frame-dot-black" columns="true-deadline" priority="70" final="false"></Application>
+      <!--, text-style-bold, text-color-red--><Application conditions="column-date-deadline-week" styles="background-fill-yellow, frame-solid-red" columns="true-deadline" priority="70" final="false"></Application>
+      <!--, text-style-bold, text-color-white--><Application conditions="column-date-deadline-squander" styles="background-fill-red" columns="true-deadline" priority="70" final="false"></Application>
+      <!--, text-style-bold, text-color-yellow, text-size-big--><Application conditions="column-date-unknown" styles="background-gradient-red" columns="true-deadline" priority="70" final="false"></Application>
+
+      <!--, text-style-bold, text-size-big--><Application conditions="column-resource-unknown" styles="background-gradient-yellow" columns="resource" priority="55" final="false"></Application>
+
+
+      <!--, text-style-bold, text-color-yellow--><Application conditions="column-information-nondisplacement-deadline" styles="background-gradient-black" columns="information" priority="70" final="false"></Application>
+
+      <!--, text-style-bold, text-color-yellow--><Application conditions="column-information-nondisplacement-deadline, column-shift-legal" styles="background-gradient-red-black" columns="information" priority="71" final="false"></Application>
+      <!--, text-style-bold, text-color-yellow--><Application conditions="column-information-nondisplacement-deadline, column-shift-illegal" styles="background-gradient-red-black" columns="information" priority="71" final="false"></Application>
+      <!--, text-style-bold, text-color-yellow--><Application conditions="column-information-nondisplacement-deadline, column-shift-gestation" styles="background-gradient-red-black" columns="information" priority="71" final="false"></Application>
+
+      <!--, text-style-bold, text-color-yellow--><Application conditions="column-information-required-result" styles="background-gradient-red" columns="information" priority="10" final="false"></Application>
+      <!--, text-style-bold, text-color-yellow--><Application conditions="column-information-repeated-task" styles="background-gradient-red" columns="information" priority="35" final="false"></Application>
+      <!--, text-style-bold, text-color-yellow--><Application conditions="column-information-risk-squander-deadline" styles="background-gradient-red" columns="information" priority="40" final="false"></Application>
+      <!--, text-style-bold, text-color-yellow--><Application conditions="column-information-need-correction-dedline" styles="background-gradient-red" columns="information" priority="41" final="false"></Application>
+      <!--, text-style-bold--><Application conditions="column-information-task-by-GK" styles="background-gradient-carrot" columns="information" priority="30" final="false"></Application>
+      <!--, text-style-bold, text-color-yellow--><Application conditions="column-information-task-by-GD" styles="background-gradient-black" columns="information" priority="31" final="false"></Application>
+
+
+      <!--, text-style-bold--><Application conditions="column-priority-high" styles="background-gradient-yellow" columns="information" priority="25" final="false"></Application>
+      <!--, text-style-bold--><Application conditions="column-priority-top" styles="background-gradient-orange" columns="information" priority="26" final="false"></Application>
+
+      <Application conditions="line-flag-hided" styles="hide" columns="all" priority="100" final="false"></Application>
+
+    </StylesApplications>
+  </Tasks>
+  <Head>
+    <Cells>
+      <!--ячейки-->
+      <Cell name="name"/>
+      <Cell name="empty-after-name"/>
+      <Cell name="asserts"/>
+      <Cell name="meeting-number"/>
+      <Cell name="date"/>
+      <Cell name="empty-after-date"/>
+      <Cell name="responsibles"/>
+      <Cell name="topic"/>
+      <Cell name="invited"/>
+      <Cell name="stage-number-head"/>
+      <Cell name="stage-name-work-content-head"/>
+      <Cell name="result-head"/>
+      <Cell name="deadline-head"/>
+      <Cell name="stage-number"/>
+      <Cell name="stage-name-work-content"/>
+      <Cell name="result"/>
+      <Cell name="deadline"/>
+      <Cell name="fine"/>
+      <Cell name="disposal"/>
+      <!--шапка для задач! новые имена  в columns-->
+      <!--<Cell name="paragraph-number-head"/>
+      <Cell name="responsible-head"/>
+      <Cell name="task-head"/>
+      <Cell name="status-head"/>
+      <Cell name="initial-deadline-head"/>
+      <Cell name="expected-deadline-head"/>
+      <Cell name="lag-reason-head"/>-->
+    </Cells>
+    <StylesApplications>
+      <ApplicationForCell style="text-size-very-big" cells="name"/>
+      <ApplicationForCell style="text-style-bold" cells="all"/>
+      <ApplicationForCell style="text-color-brown" cells="responsibles, invited"/>
+      <ApplicationForCell style="text-color-violet" cells="topic, disposal"/>
+      <ApplicationForCell style="frame-solid-brown" cells="stage-number-head, stage-name-work-content-head, result-head, deadline-head, stage-number, stage-name-work-content, result, deadline, fine, disposal"/>
+      <ApplicationForCell style="text-style-capital" cells="stage-number, stage-name-work-content, result, deadline, fine"/>
+      <ApplicationForCell style="text-style-underlined" cells="fine, disposal"/>
+      <ApplicationForCell style="text-color-red" cells="deadline"/>
+    </StylesApplications>
+  </Head>
+</Render>
